@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dialog titles -->
+    <string name="add_task_type_title">New Task Type</string>
+    <string name="edit_task_type_title">Edit Task Type</string>
+    <string name="pick_schedule_title">Pick a Schedule</string>
+    <string name="delete_schedule_title">Delete \'%1$s\'?</string>
+
+    <!-- Labels and placeholders -->
+    <string name="type_name_label">Type name</string>
+    <string name="color_label">Color</string>
+    <string name="new_schedule_label">New schedule</string>
+    <string name="schedule_name_placeholder">Schedule name</string>
+
+    <!-- Buttons -->
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_test_notify">Notify</string>
+
+    <!-- Body text -->
+    <string name="delete_schedule_confirmation">All scheduled tasks belonging to this schedule will also be permanently deleted.</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_add_task_type">Add task type</string>
+    <string name="cd_delete_set">Delete %1$s</string>
+    <string name="cd_remove_task">Remove task</string>
+    <string name="cd_resize_top">Resize top</string>
+    <string name="cd_resize_bottom">Resize bottom</string>
+    <string name="cd_pause_reminders">Pause reminders</string>
+    <string name="cd_start_reminders">Start reminders</string>
+    <string name="cd_setup">Setup</string>
+
+    <!-- Seed data — initial values inserted into the database on first install -->
+    <string name="seed_task_type_stand">Stand</string>
+    <string name="seed_task_type_sit">Sit</string>
+    <string name="seed_task_type_recline">Recline</string>
+    <string name="seed_task_type_activity">Activity</string>
+    <string name="seed_task_type_break">Break</string>
+    <string name="seed_default_set_name">Default Work Posture Schedule</string>
+
+</resources>

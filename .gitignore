@@ -1,0 +1,50 @@
+# AI
+.claude/
+
+# Gradle
+.gradle/
+build/
+**/build/
+local.properties
+*.iml
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+proguard/
+
+# Kotlin / KMP compiler
+.kotlin/
+**/.kotlin/
+kotlin-js-store/
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.ipr
+*.iws
+out/
+
+# iOS / Xcode
+iosApp/**/.build/
+iosApp/**/DerivedData/
+iosApp/**/*.xcuserstate
+iosApp/**/*.xcuserdatad/
+iosApp/**/xcuserdata/
+iosApp/Pods/
+iosApp/*.xcworkspace/xcuserdata/
+iosApp/*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+iosApp/Podfile.lock
+
+# Desktop JVM
+desktopApp/run/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
