@@ -9,10 +9,10 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-class ResizeTaskUseCaseTest {
+class ResizeTaskBottomUseCaseTest {
 
     private val repo = MockTaskRepository()
-    private val useCase = ResizeTaskUseCase(repo)
+    private val useCase = ResizeTaskBottomUseCase(repo)
 
     @Test
     fun `given unknown task id when resized then nothing happens`() = runTest {

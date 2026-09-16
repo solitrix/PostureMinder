@@ -13,7 +13,7 @@ import com.solitrix.postureminder.shared.domain.usecase.ObserveTaskTypesUseCase
 import com.solitrix.postureminder.shared.domain.usecase.PlaceTaskUseCase
 import com.solitrix.postureminder.shared.domain.usecase.RemoveTaskUseCase
 import com.solitrix.postureminder.shared.domain.usecase.ResizeTaskTopUseCase
-import com.solitrix.postureminder.shared.domain.usecase.ResizeTaskUseCase
+import com.solitrix.postureminder.shared.domain.usecase.ResizeTaskBottomUseCase
 import com.solitrix.postureminder.shared.domain.usecase.SetActiveScheduleUseCase
 import com.solitrix.postureminder.shared.domain.usecase.ToggleRemindersUseCase
 import com.solitrix.postureminder.shared.domain.usecase.UpdateTaskTypeUseCase
@@ -67,7 +67,7 @@ class PostureViewModelTest {
         placeTask = PlaceTaskUseCase(taskRepo),
         moveTask = MoveTaskUseCase(taskRepo),
         removeTask = RemoveTaskUseCase(taskRepo),
-        resizeTask = ResizeTaskUseCase(taskRepo),
+        resizeTask = ResizeTaskBottomUseCase(taskRepo),
         resizeTaskTop = ResizeTaskTopUseCase(taskRepo),
         observeTaskTypes = ObserveTaskTypesUseCase(taskTypeRepo),
         addTaskType = AddTaskTypeUseCase(taskTypeRepo),

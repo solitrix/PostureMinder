@@ -12,7 +12,7 @@ import com.solitrix.postureminder.shared.domain.usecase.ObserveTaskTypesUseCase
 import com.solitrix.postureminder.shared.domain.usecase.PlaceTaskUseCase
 import com.solitrix.postureminder.shared.domain.usecase.RemoveTaskUseCase
 import com.solitrix.postureminder.shared.domain.usecase.ResizeTaskTopUseCase
-import com.solitrix.postureminder.shared.domain.usecase.ResizeTaskUseCase
+import com.solitrix.postureminder.shared.domain.usecase.ResizeTaskBottomUseCase
 import com.solitrix.postureminder.shared.domain.usecase.SetActiveScheduleUseCase
 import com.solitrix.postureminder.shared.domain.usecase.ToggleRemindersUseCase
 import com.solitrix.postureminder.shared.domain.usecase.UpdateTaskTypeUseCase
@@ -23,7 +23,7 @@ val domainModule = module {
     factory { PlaceTaskUseCase(get()) }
     factory { MoveTaskUseCase(get()) }
     factory { RemoveTaskUseCase(get()) }
-    factory { ResizeTaskUseCase(get()) }
+    factory { ResizeTaskBottomUseCase(get()) }
     factory { ResizeTaskTopUseCase(get()) }
     factory { ObserveTaskTypesUseCase(get()) }
     factory { AddTaskTypeUseCase(get()) }

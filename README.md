@@ -1,11 +1,13 @@
 # PostureMinder App
 
-An app for timing and alerting pomodoro-style reminders to alternate working posture.
+An app with pomodoro-style reminders to alert you to alternate your working posture (or any other reminders on a schedule).
+
 Written as Kotlin/Compose multiplatform app for Android, iOS, OSX, Win, Linux ( & Web)
 
-## Running the App
 
-### Desktop
+![DesktopScreenshot](/screenshots/desktop.png)
+
+## Running the App
 
 ```bash
 ./gradlew :desktopApp:run

@@ -17,7 +17,7 @@ import com.solitrix.postureminder.shared.domain.usecase.ObserveTaskTypesUseCase
 import com.solitrix.postureminder.shared.domain.usecase.PlaceTaskUseCase
 import com.solitrix.postureminder.shared.domain.usecase.RemoveTaskUseCase
 import com.solitrix.postureminder.shared.domain.usecase.ResizeTaskTopUseCase
-import com.solitrix.postureminder.shared.domain.usecase.ResizeTaskUseCase
+import com.solitrix.postureminder.shared.domain.usecase.ResizeTaskBottomUseCase
 import com.solitrix.postureminder.shared.domain.usecase.SetActiveScheduleUseCase
 import com.solitrix.postureminder.shared.domain.usecase.ToggleRemindersUseCase
 import com.solitrix.postureminder.shared.domain.usecase.UpdateTaskTypeUseCase
@@ -79,7 +79,7 @@ class PostureViewModel(
     private val placeTask: PlaceTaskUseCase,
     private val moveTask: MoveTaskUseCase,
     private val removeTask: RemoveTaskUseCase,
-    private val resizeTask: ResizeTaskUseCase,
+    private val resizeTask: ResizeTaskBottomUseCase,
     private val resizeTaskTop: ResizeTaskTopUseCase,
     private val observeTaskTypes: ObserveTaskTypesUseCase,
     private val addTaskType: AddTaskTypeUseCase,

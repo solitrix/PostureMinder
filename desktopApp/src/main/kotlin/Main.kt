@@ -4,6 +4,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.drawscope.DrawScope
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.window.Tray
 import androidx.compose.ui.window.Window
@@ -19,8 +24,18 @@ fun main() {
         var isWindowVisible by remember { mutableStateOf(true) }
         val trayState = rememberTrayState()
 
+        val baseIcon = rememberVectorPainter(Icons.Filled.Accessibility)
+        val trayIcon = remember(baseIcon) {
+            object : Painter() {
+                override val intrinsicSize: Size get() = baseIcon.intrinsicSize
+                override fun DrawScope.onDraw() {
+                    with(baseIcon) { draw(size, colorFilter = ColorFilter.tint(Color.White)) }
+                }
+            }
+        }
+
         Tray(
-            icon = rememberVectorPainter(Icons.Filled.Accessibility),
+            icon = trayIcon,
             state = trayState,
             tooltip = "PostureMinder",
             onAction = { isWindowVisible = true },

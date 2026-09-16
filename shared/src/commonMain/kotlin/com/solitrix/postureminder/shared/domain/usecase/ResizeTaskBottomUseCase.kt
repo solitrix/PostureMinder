@@ -4,7 +4,7 @@ import com.solitrix.postureminder.shared.domain.model.SLOT_COUNT
 import com.solitrix.postureminder.shared.domain.model.ScheduledTask
 import com.solitrix.postureminder.shared.domain.repository.TaskRepository
 
-class ResizeTaskUseCase(private val taskRepository: TaskRepository) {
+class ResizeTaskBottomUseCase(private val taskRepository: TaskRepository) {
     suspend operator fun invoke(taskId: Long, newDurationSlots: Int, currentTasks: List<ScheduledTask>) {
         val item = currentTasks.find { it.id == taskId } ?: return
         val newDuration = newDurationSlots.coerceAtLeast(1)
